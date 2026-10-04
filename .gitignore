@@ -5,3 +5,13 @@ server/todos.db-shm
 server/todos.db-wal
 *.log
 .DS_Store
+.env
+.env.*
+**/.env
+**/.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+**/secrets/

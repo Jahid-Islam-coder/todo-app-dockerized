@@ -1,7 +1,7 @@
 const Database = require('better-sqlite3');
 const path = require('path');
 
-const db = new Database(path.join(__dirname, 'todos.db'));
+const db = new Database(process.env.TODO_DB_PATH || path.join(__dirname, 'todos.db'));
 
 db.pragma('journal_mode = WAL');
 
